@@ -2,7 +2,7 @@ export const navLinks = [
 	{ id: 1, name: 'Work', href: '#work' },
 	{ id: 2, name: 'About', href: '#about' },
 	{ id: 3, name: 'Contact', href: '#contact' },
-	// { id: 4, name: 'Home', href: '#home' },
+	{ id: 4, name: 'Home', href: '#hero' },
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
@@ -46,3 +46,85 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 			: [2.0, 1.5, 1],
 	};
 };
+
+const python = {
+	path: '/assets/python.svg',
+	name: 'python',
+};
+
+const typescript = {
+	path: 'assets/typescript.svg',
+	name: 'typescript',
+};
+
+const github = {
+	path: '/assets/github-mark.svg',
+	name: 'github',
+};
+
+const framer = {
+	path: '/assets/framer-.svg',
+	name: 'framer motion',
+};
+
+const three = {
+	path: '/assets/three.png',
+	name: 'three js',
+};
+
+export const myProjects = [
+	{
+		title: 'Project01',
+		desc: [
+			'Suspendisse semper ante lorem, quis iaculis diam interdum sit amet. Morbi bibendum molestie diam. Nam fringilla sollicitudin tortor at volutpat. Nam sodales nisl condimentum mi cursus, sed ultricies magna tristique. Curabitur id magna nisi. ',
+		],
+		subDesc: [],
+		href: 'https://www.google.com',
+		className: 'animatedText2',
+		texture: '/images/textures/screen.mp4',
+		logo: '/assets/projects/project-logo2.png',
+		logoStyle: {
+			backgroundColor: '#0E1F38',
+			border: '0.2px solid #0E2D58',
+			boxShadow: '0px 0px 60px 0px #635BFF4D',
+		},
+		tags: [python, typescript, github],
+		spotlight: '/assets/spotlight1.png',
+	},
+	{
+		title: 'Project02',
+		desc: [
+			'Suspendisse semper ante lorem, quis iaculis diam interdum sit amet. Morbi bibendum molestie diam. Nam fringilla sollicitudin tortor at volutpat. Nam sodales nisl condimentum mi cursus, sed ultricies magna tristique. Curabitur id magna nisi. ',
+		],
+		subDesc: [],
+		href: 'https://www.google.com',
+		className: 'animatedText2',
+		texture: '/images/textures/screen2.mp4',
+		logo: '/assets/projects/project-logo2.png',
+		logoStyle: {
+			backgroundColor: '#0E1F38',
+			border: '0.2px solid #0E2D58',
+			boxShadow: '0px 0px 60px 0px #635BFF4D',
+		},
+		tags: [framer, three, typescript, github],
+		spotlight: '/assets/spotlight1.png',
+	},
+	{
+		title: 'Project03',
+		desc: [
+			'Nam sodales nisl condimentum mi cursus, sed ultricies magna tristique. Curabitur id magna nisi. ',
+		],
+		subDesc: [],
+		href: 'https://www.google.com',
+		className: 'animatedText2',
+		texture: '/images/textures/screen.mp4',
+		logo: '/assets/projects/project-logo2.png',
+		logoStyle: {
+			backgroundColor: '#0E1F38',
+			border: '0.2px solid #0E2D58',
+			boxShadow: '0px 0px 60px 0px #635BFF4D',
+		},
+		tags: [framer, three, python, github],
+		spotlight: '/assets/spotlight1.png',
+	},
+];

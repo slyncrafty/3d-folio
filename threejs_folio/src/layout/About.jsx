@@ -13,7 +13,7 @@ const About = () => {
 		}, 2000);
 	};
 	return (
-		<section className='c-space my-20'>
+		<section className='c-space my-20' id='about'>
 			<div className='grid-3-cols'>
 				<div className='col-span-1 xl:row-span-3'>
 					<div className='grid-container'>
@@ -50,6 +50,7 @@ const About = () => {
 				<div className='col-span-1 xl:row-span-4'>
 					<div className='grid-container'>
 						<div className='rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center'>
+							{/* https://github.com/vasturiano/react-globe.gl */}
 							<Globe
 								height={326}
 								width={326}
@@ -106,7 +107,7 @@ const About = () => {
 						<img
 							src='/images/bg.png'
 							alt='grid-4'
-							className='w-full md:h-[126px] sm-h-[276px] h-fit object-cover sm:object-top'
+							className='w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top'
 						/>
 						<div className='space-y-2'>
 							<p className='grid-subtext text-center mt-4'>Contact me</p>

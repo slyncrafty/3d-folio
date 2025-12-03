@@ -1,8 +1,13 @@
 @import 'tailwindcss';
 
+* {
+	scroll-behavior: smooth;
+}
+
 /* @variant dark (.dark &); */
 @theme {
 	--color-white: #ffffff;
+	--color-white-50: #d9ecff;
 	--color-white-500: #62646c;
 	--color-white-600: #afb0b6;
 	--color-white-700: #d6d9e9;
@@ -86,7 +91,7 @@
 	}
 
 	.social-icon {
-		@apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50;
+		@apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-gray-900;
 	}
 
 	.social-icon img {
@@ -104,7 +109,7 @@
 	}
 
 	.grid-2-cols {
-		@apply grid grid-cols-1 md:grid-cols-2 gap-6;
+		@apply grid grid-cols-1 md:grid-cols-2 gap-5;
 	}
 
 	.grid-3-cols {
@@ -127,6 +132,10 @@
 	}
 
 	/* button */
+	.clickable {
+		@apply hover:bg-black-50 transition-colors duration-300 cursor-pointer;
+	}
+
 	.contact-btn {
 		@apply flex w-full mx-auto;
 	}
@@ -137,6 +146,10 @@
 		@apply group-hover:text-white transition-colors duration-300;
 	}
 
+	.arrow-btn {
+		@apply p-2 size-12 lg:size-14 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-500 bg-white-600 hover:bg-black-50;
+	}
+
 	.copy-container {
 		@apply flex flex-row justify-center items-center cursor-pointer mx-auto mt-4 mb-4;
 	}
@@ -144,6 +157,27 @@
 	.container {
 		@apply mx-auto max-w-none;
 	}
+}
+
+.head-text {
+	@apply font-mono font-semi-bold text-3xl my-2;
+}
+
+.body-text {
+	@apply font-sans leading-6 text-lg md:text-xl pb-5 md:pb-0 font-normal text-white-50 text-left;
+}
+
+.animatedText {
+	@apply text-white-50 transition-transform duration-300 hover:scale-105;
+	/* absolute left-0 bottom-[-100%] w-full h-full bg-[#2D3240] group-hover:bottom-0 transition-all duration-700; */
+}
+
+.spotlight {
+	@apply opacity-80;
+}
+
+.tech-logo {
+	@apply p-2 size-12 lg:size-10 flex-none rounded-lg flex justify-center items-center border border-black-500 bg-gray-100;
 }
 
 @keyframes wave-animation {

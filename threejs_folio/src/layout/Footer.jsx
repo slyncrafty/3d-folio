@@ -18,8 +18,8 @@ const Footer = () => {
 				</a>
 				<a href='/' className='social-icon'>
 					<img
-						src='assets/github-mark.svg'
-						alt='github'
+						src='assets/linkedin.png'
+						alt='linkedin'
 						className='w-1/2 h-1/2'
 					/>
 				</a>
